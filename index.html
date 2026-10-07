@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Morgenstund – frische Cafés, hand-crafted Getränke und kleine Köstlichkeiten.">
+  <title>Morgenstund — Café & Coffee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Morgenstund Startseite">
+      <span class="brand-mark" aria-hidden="true">M</span>
+      <span>Morgenstund</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Hauptnavigation">
+      <a href="#menu">Menü</a>
+      <a href="#story">Unsere Geschichte</a>
+      <a href="#visit">Besuchen</a>
+    </nav>
+    <button class="cart-button" id="cartButton" type="button" aria-label="Warenkorb öffnen">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6L20 8H6.1M9 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm8 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg>
+      <span>Warenkorb</span>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Dein Morgen, etwas Besonderes</p>
+        <h1>Gute Laune<br>in jedem <em>Becher.</em></h1>
+        <p class="hero-text">Kaffee, der September gibt. Frische Zutaten, kleine Köstlichkeiten und eine Atmosphäre, die dich willkommen heißen.</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#menu">Menü entdecken <span>↗</span></a>
+          <div class="opening-hours"><span>Öffnungszeiten</span><strong>Mo–Fr 7:00–19:00</strong></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Kaffee in einer Tasse">
+        <div class="sun-shape"></div>
+        <div class="coffee-cup">
+          <div class="cup-rim"></div>
+          <div class="coffee-surface"></div>
+          <div class="steam steam-one"></div>
+          <div class="steam steam-two"></div>
+          <div class="cup-handle"></div>
+        </div>
+        <div class="leaf leaf-one"></div>
+        <div class="leaf leaf-two"></div>
+        <div class="floating-note"><span>01</span><p>Handmade<br>mit Liebe</p></div>
+      </div>
+    </section>
+
+    <section class="values" aria-label="Unsere Werte">
+      <div><span>01</span><p><strong>Bio & nachhaltig</strong>Mit放心 bei uns.</p></div>
+      <div><span>02</span><p><strong>Cozy & lokal</strong>Ein Ort für alle.</p></div>
+      <div><span>03</span><p><strong>Mit viel Geschmack</strong>Für jeden Morgen.</p></div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span></span>Unser Menü</p>
+          <h2>Etwas für jede<br><em>Stimmung.</em></h2>
+        </div>
+        <p>Von der ersten Kaffeetasse bis zum letzten Stück Kuchen – alles frisch, angenehm und genau nach deinem Geschmack.</p>
+      </div>
+      <div class="filter-bar" role="group" aria-label="Menü filtern">
+        <button class="filter active" data-filter="alle" type="button">Alle</button>
+        <button class="filter" data-filter="kaffee" type="button">Kaffee</button>
+        <button class="filter" data-filter="kalt" type="button">Kalt</button>
+        <button class="filter" data-filter="snack" type="button">Snacks</button>
+        <button class="filter" data-filter="süß" type="button">Süß</button>
+      </div>
+      <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="story" id="story">
+      <div class="story-image">
+        <div class="image-window">
+          <div class="window-light"></div>
+          <div class="table"></div>
+          <div class="chair chair-left"></div>
+          <div class="chair chair-right"></div>
+          <div class="plant"><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="stamp">Seit<br><strong>2018</strong></div>
+      </div>
+      <div class="story-copy">
+        <p class="eyebrow light"><span></span> Unsere Geschichte</p>
+        <h2>Ein Café für<br>die <em>kleinen</em> Dinge.</h2>
+        <p>Vor uns war nur ein kleiner Kaffeestand. Heute ist Morgenstund ein Ort für Freunde, Nachbarn, Autoren und alle, die eine Pause vom Alltag brauchen.</p>
+        <p>Jedes Produkt wird von uns mit Sorgfalt ausgewählt – und bei uns selbst zubereitet.</p>
+        <a href="#visit">Come say hello <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="visit" id="visit">
+      <div>
+        <p class="eyebrow"><span></span> Besuchen</p>
+        <h2>Bis zum nächsten<br><em>Morgen.</em></h2>
+      </div>
+      <div class="visit-details">
+        <div><span>Adresse</span><strong>Hauptstraße 18<br>12345 Berlin</strong></div>
+        <div><span>Öffnungszeiten</span><strong>Mo–Fr 7:00–19:00<br>Sa–So 8:00–20:00</strong></div>
+        <a href="https://maps.google.com" target="_blank" rel="noreferrer">Anfahrt planen <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#top"><span class="brand-mark">M</span><span>Morgenstund</span></a>
+    <p>Made for slow mornings.</p>
+    <div><a href="#menu">Menü</a><a href="#story">Geschichte</a><a href="#visit">Kontakt</a></div>
+    <small>© 2026 Morgenstund Café</small>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Warenkorb">
+    <div class="cart-header">
+      <div><p class="eyebrow"><span></span> Dein Einkauf</p><h2>Warenkorb</h2></div>
+      <button id="closeCart" type="button" aria-label="Warenkorb schließen">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty">
+      <span>☕</span><h3>Dein Becher wartet.</h3><p>Füge etwas Schönes aus dem Menü hinzu.</p>
+    </div>
+    <div class="cart-footer" id="cartFooter" hidden>
+      <div><span>Gesamt</span><strong id="cartTotal">0,00 €</strong></div>
+      <button class="checkout" type="button">Bestellung plaatsen <span>→</span></button>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite">Zur Bestellung hinzugefügt</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
